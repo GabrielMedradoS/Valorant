@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Open sans';
+}
+
+/*** BASE ******************************************************* */
+.container {
+    width: 100vw;
+    height: 54.8rem;  
+    margin: 0 auto;
+
+    padding:  1.5rem 2.8rem;
+
+    background:linear-gradient(rgb(31,35,38,.95),rgb(31,35,38,.95)100%), url(assets/background.png) no-repeat top center/cover;
+    
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body a {
+    text-decoration: none;
+}
+
+/*** HEADER ******************************************************* */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+header .logo{
+    margin-left: 4rem;
+}
+
+header .icon-share2 {
+    margin-right: 5rem;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #E5E5E5;
+}
+
+/*** MAIN ******************************************************* */
+h2 {
+    font-size: 3.5rem;
+    font-family: 'Druk Wide Bold';
+    
+    opacity: 0.8;
+    color: rgb(31,35,38,.95);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #E5E5E5;
+
+    width: 29.3rem;
+    height: 4.5rem;
+
+    margin-left: 6rem;
+    margin-top: 7.5rem;
+}
+
+section .card img {
+    max-width: 100%;
+    height: auto;
+
+    display: block;
+    background-color: #FF4656;
+
+    position: relative;
+
+    border: 1px solid #E5E5E5;
+}
+
+section.cards {
+    display: inline-flex;
+    align-items: center;
+
+    margin-top: 4rem;
+    margin-left: 3rem;
+}
+
+section .card {
+    width: 6.875rem; 
+    height: 8.125rem;
+    
+    margin-left: 2rem;
+
+     /* ajudar a identificar o corte no fundo do card */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Corte no card */
+section .card::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: -68px; 
+    right: 90px;
+    width: 80px;
+    height: 90px;
+    transform: rotate(136deg);
+    background-color: rgb(31,35,38,1);
+    opacity: 1;
+
+    border: 1.8px solid #E5E5E5;
+}
+
+section .card p {
+    font-family: 'Druk Wide Bold';
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: #FF4656;
+
+    width: 11rem;
+    height: 1rem;
+}
+
+/*** ilustration **************************************************** */
+ .ilustration img {
+    height: 49.8rem;
+    width: 37rem;
+
+    top: 5rem;
+    right: 0;
+
+    position: absolute;
+} 
+
+.date {
+    display: flex;
+    justify-content: end;
+
+    margin-top: 8rem;
+    position: relative;
+
+}
+
+.date1 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #E5E5E5;
+}
+
+.date2 {
+    font-size: 1.875rem;
+    font-weight: 400;
+    color:#FF4656;
+
+    margin-left: 0.7rem;
+    margin-top: 5rem
+}
+
+.divider {
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+
+    height: 9.7rem;
+    border-left: 2px solid #FF4656;
+}
+
+/*** FOOTER ******************************************************* */
+footer {
+/*     display: flex;
+    justify-content: space-between; */
+    margin-top: -1.6rem;
+    margin-left: 4rem;
+
+    align-items: center;
+}
+
+footer i {
+    font-size: .8rem;
+}
+
+footer .social a {  
+    margin-right: 6rem;
+    display: inline-block;
+
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        width: 100vw;
+        height: 58.8rem;
+    }  
+
+    .ilustration img {
+        height: 53.6rem;
+        width: 38rem;
+    } 
+    
+}
