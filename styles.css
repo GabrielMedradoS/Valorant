@@ -178,7 +178,7 @@ section .card p {
     display: flex;
     justify-content: end;
 
-    margin-top: 8rem;
+    margin-top: 10rem;
     position: relative;
 
 }
@@ -189,7 +189,21 @@ section .card p {
     color: #E5E5E5;
 }
 
+.date1 .dia {
+    margin-left: 0 ;
+}
 
+.date1 .mes {
+    margin-top: -2rem;
+}
+
+.divider {
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+
+    height: 8rem;
+    border-left: 2px solid #FF4656;
+}
 
 .date2 {
     font-size: 1.875rem;
@@ -197,15 +211,7 @@ section .card p {
     color:#FF4656;
 
     margin-left: 0.7rem;
-    margin-top: 5rem
-}
-
-.divider {
-    margin-top: 2rem;
-    margin-left: 0.5rem;
-
-    height: 9.7rem;
-    border-left: 2px solid #FF4656;
+    margin-top: 4.5rem
 }
 
 /*** FOOTER ******************************************************* */
