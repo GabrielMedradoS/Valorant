@@ -227,14 +227,11 @@ footer {
 footer i {
     font-size: 1.5rem;
     color: #E5E5E5;
-    
 }
 
 footer .social a {  
     margin-right: 2.25rem;
     display: inline-block;
-
-    
 }
 
 @media screen and (min-width: 1200px) {
@@ -246,10 +243,21 @@ footer .social a {
         margin-left: auto;
         margin-right: auto;
     }  
+}
 
- /*    .ilustration img {
-        height: 53.6rem;
-        width: 38rem;
-    }  */
+@media screen and (min-width: 1400px) {
+    .ilustration img {
+        height: 44.8rem;
+        width: 37rem;
+
+        margin-right: 20rem;
+    } 
     
+    .container {
+        width: 100vw;
+        height: 100vh;  
+        margin: 0 auto;
+       
+    }
+
 }
