@@ -178,7 +178,8 @@ section .card p {
     display: flex;
     justify-content: end;
 
-    margin-top: 10rem;
+    margin-top: 9rem;
+
     position: relative;
 
 }
@@ -218,7 +219,7 @@ section .card p {
 footer {
 /*     display: flex;
     justify-content: space-between; */
-    margin-top: -1.6rem;
+    margin-top: 0rem;
     margin-left: 4rem;
 
     align-items: center;
@@ -243,21 +244,50 @@ footer .social a {
         margin-left: auto;
         margin-right: auto;
     }  
+
+        .ilustration img {
+        height: 44.8rem;
+        width: 37rem;       
+    }
+    
+    .date {
+        margin-right: -4rem;
+    }
+
 }
 
 @media screen and (min-width: 1400px) {
+    body {
+        width: 100vw;
+        height: 58.8rem;
+
+        max-width: 1120px;
+        margin-left: auto;
+        margin-right: auto;
+
+        padding:  2rem 2.8rem;
+    }
+    
+    .valorant {
+        margin-top: 15rem;
+    }
+
     .ilustration img {
         height: 44.8rem;
         width: 37rem;
 
         margin-right: 20rem;
-    } 
+
+        top: 14rem;
+    }
     
-    .container {
-        width: 100vw;
-        height: 100vh;  
-        margin: 0 auto;
-       
+    .date {
+        margin-top: 13rem;
+        margin-right: 0;
+    }
+
+    footer {
+        margin-top: -2.6rem;
     }
 
 }
