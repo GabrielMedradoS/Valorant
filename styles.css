@@ -27,6 +27,10 @@ body a {
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*** HEADER ******************************************************* */
 header {
     display: flex;
@@ -68,6 +72,16 @@ h2 {
     margin-top: 11.5rem;
 }
 
+
+/*** CARDS ******************************************************* */
+section.cards {
+    display: inline-flex;
+    align-items: center;
+
+    margin-top: 0.3rem;
+    margin-left: 3rem;
+}
+
 section .card img {
     max-width: 100%;
     height: auto;
@@ -78,52 +92,6 @@ section .card img {
     position: relative;
 
     border: 1px solid #E5E5E5;
-}
-
-section.cards {
-    display: inline-flex;
-    align-items: center;
-
-    margin-top: 0.3rem;
-    margin-left: 3rem;
-}
-
-.lines {
-    content: "";
-    border: 1px solid #FFFFFF;
-    position: absolute;
-    height: 108px;
-    width: 109px;
-    opacity: .6;
-}
-
-.lines::after {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    top: -6px;
-    right: 105px;
-    width: 7px;
-    height: 9px;
-    transform: rotate(136deg);
-    background-color: rgb(31,35,38,.97);
-
-    border-top: 1px solid #E5E5E5;
-}
-
-.lines.omen {
-    margin-top: -33px;
-    margin-left: 26px;
-}
-
-.lines.sage {  
-    margin-top: -33px;
-    margin-left: 168px;
-}
-
-.lines.sova {    
-    margin-top: -33px;
-    margin-left: 310px;
 }
 
 section .card {
@@ -160,6 +128,42 @@ section .card p {
 
     width: 11rem;
     height: 1rem;
+}
+
+.box {
+    transition: transform 100ms ease-in-out;
+}
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* Linhas dos card */
+.lines {
+    content: "";
+    border: 1px solid #FFFFFF;
+    position: absolute;
+    height: 108px;
+    width: 109px;
+    opacity: .6;
+}
+
+.lines::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: -6px;
+    right: 105px;
+    width: 7px;
+    height: 9px;
+    transform: rotate(136deg);
+    background-color: rgb(31,35,38,.97);
+
+    border-top: 1px solid #E5E5E5;
+}
+
+.lines {
+    margin-top: -6px;
+    margin-left: 26px;
 }
 
 /*** ilustration **************************************************** */
@@ -223,6 +227,13 @@ footer {
     margin-left: 4rem;
 
     align-items: center;
+}
+
+a {
+    transition: 0.3s;
+}
+a:hover {
+    transform: translateY(-8px);
 }
 
 footer i {
@@ -291,3 +302,39 @@ footer .social a {
     }
 
 }
+
+/* @media screen and (max-width: 1000px) {
+    body {
+        width: 100vw;
+        height: 100vh;  
+        margin: 0 auto;
+    
+        
+    
+        background:linear-gradient(rgb(31,35,38,.95),rgb(31,35,38,.95),rgba(255,70,86,.15)100%), 
+        url(assets/background.png) no-repeat top cover;
+        
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        padding: 10px;
+    }
+
+    .ilustration img {
+        height: 25.8rem;
+        width: 37rem;
+
+        margin-right: 20rem;
+
+        top: 14rem;
+    }
+
+    section .card {
+        width: 3.875rem;
+    } 
+    
+} */
